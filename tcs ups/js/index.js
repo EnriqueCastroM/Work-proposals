@@ -36,10 +36,14 @@ function downloadCSVFile(csv, filename) {
         download_link.click();
     }
 
-    document.getElementById("download-button").addEventListener("click", function () {
-        var html = document.querySelector("table").outerHTML;
-        htmlToCSV(html, "endofshift.csv");
-    });
+function buttonDownload()
+    {
+            var html = document.querySelector("table").outerHTML;
+            htmlToCSV(html, "students.csv");
+    
+    }
+   
+   
 
 
     				
