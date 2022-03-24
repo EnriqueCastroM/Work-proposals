@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/01.IntroALaWeb/05.PositionFloat/css/styles.css">
-    <title>Position float</title>
+    <link rel="stylesheet" href="/tcs ups/css/styles.css">
+    <title>End Of Shift</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="/01.IntroALaWeb/05.PositionFloat/img/UPS-Logo-650x366.png">
+    <script src="/tcs ups/js/index.js"></script>
 </head>
 <body>
     <header>
         <h1>
-            <img src="/01.IntroALaWeb/05.PositionFloat/img/UPS-Logo-650x366.png" alt="" width="32px" height="32px">
+            <img src="/tcs ups/img/UPS-Logo-650x366.png" alt="" width="32px" height="32px">
             UPS End of shift Count
         </h1>
     </header>
@@ -28,7 +29,81 @@
         
     </aside>
     <main>
+        <table class="default">
 
+            <tr>
+          
+              <th scope="row">SLIC</th>
+          
+              <th>3306 FLMIA</th>
+          
+              <th>3740 TNCHA</th>
+          
+              <th>3310 FLMIA</th>
+          
+            </tr>
+          
+            <tr>
+          
+              <th>INT</th>
+          
+              <td><input type="number" id="txtbox"></td>
+          
+              <td><input type="number" id="txtbox"></td>
+          
+              <td><input type="number" id="txtbox"></td>
+            
+            </tr>
+          
+            <tr>
+          
+              <th>DCR</th>
+          
+              <td><input type="number" id="txtbox"></td>
+          
+              <td><input type="number" id="txtbox"></td>
+          
+              <td><input type="number" id="txtbox"></td>
+          
+            </tr>
+          
+            <tr>
+          
+              <th>ODS</th>
+          
+              <td><input type="number" id="txtbox"></td>
+          
+              <td><input type="number" id="txtbox"></td>
+          
+              <td><input type="number" id="txtbox"></td>
+          
+            </tr>
+          
+            <tr>
+          
+                <th>Cancel</th>
+            
+                <td><input type="number" id="txtbox"></td>
+            
+                <td><input type="number" id="txtbox"></td>
+            
+                <td><input type="number" id="txtbox"></td>
+            
+              </tr>
+              <tr>
+          
+                <th>Total ODS</th>
+            
+                <td><input type="number" id="txtbox"></td>
+            
+                <td><input type="number" id="txtbox"></td>
+            
+                <td><input type="number" id="txtbox"></td>
+            
+              </tr>
+          </table>
+
+          <div><button id="download-button">Guardar tabla</button></div>
     </main>
     <footer>
         <i class="material-icons">contact_support</i>

@@ -31,7 +31,7 @@ aside{
 }
 
 main{
-    background-color: #ff8f00;
+    background-color: #e2cdb1;
     float: right;
     width: 85%;
     height: 80%;
@@ -63,4 +63,8 @@ p{
     margin: 0;
     text-align: justify;
 
+}
+
+.default td{
+    border: 1px black solid;
 }
