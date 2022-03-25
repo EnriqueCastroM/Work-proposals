@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="/01.IntroALaWeb/05.PositionFloat/img/UPS-Logo-650x366.png">
-    <script src="/tcs ups/js/index.js"></script>
+    <script type="text/javascript" src="/tcs ups/js/index.js"></script>
 </head>
 <body>
     <header>
@@ -29,7 +29,7 @@
         
     </aside>
     <main>
-        <table class="default">
+        <table id="tblData" class="default">
 
             <tr>
           
@@ -47,11 +47,11 @@
           
               <th>INT</th>
           
-              <td><input type="number" id=""></td>
+              <td><input type="number" id="int3306" value=""></td>
           
-              <td><input type="number" id=""></td>
+              <td><input type="number" id="int3740" value=""></td>
           
-              <td><input type="number" id=""></td>
+              <td><input type="number" id="int3310" value=""></td>
             
             </tr>
           
@@ -59,11 +59,11 @@
           
               <th>DCR</th>
           
-              <td><input type="number" id=""></td>
+              <td><input type="number" id="dcr3306" value=""></td>
           
-              <td><input type="number" id=""></td>
+              <td><input type="number" id="dcr3740" value=""></td>
           
-              <td><input type="number" id=""></td>
+              <td><input type="number" id="dcr3310" value=""></td>
           
             </tr>
           
@@ -71,11 +71,11 @@
           
               <th>ODS</th>
           
-              <td><input type="number" id=""></td>
+              <td><input type="number" id="ods3306" value=""></td>
           
-              <td><input type="number" id=""></td>
+              <td><input type="number" id="ods3740" value=""></td>
           
-              <td><input type="number" id=""></td>
+              <td><input type="number" id="ods3310" value=""></td>
           
             </tr>
           
@@ -83,27 +83,41 @@
           
                 <th>Cancel</th>
             
-                <td><input type="number" id=""></td>
+                <td><input type="number" id="cnl3306" value=""></td>
             
-                <td><input type="number" id=""></td>
+                <td><input type="number" id="cnl3370" value=""></td>
             
-                <td><input type="number" id=""></td>
+                <td><input type="number" id="cnl3310" value=""></td>
             
               </tr>
               <tr>
           
                 <th>Total ODS</th>
             
-                <td><input type="number" id=""></td>
+                <td><input type="number" id="total3306" value=""></td>
             
-                <td><input type="number" id=""></td>
+                <td><input type="number" id="total3740" value=""></td>
             
-                <td><input type="number" id=""></td>
+                <td><input type="number" id="total3310" value=""></td>
             
               </tr>
           </table>
 
-          <div><button id="download-button" onclick="buttonDownload();">Guardar tabla</button></div>
+
+
+
+
+<!-- Aqui se pondra la tabla nueva a exportar -->
+
+
+
+
+
+
+          <div><button id="btnExport" onclick="exportTableToExcel('tblData')">Export HTML Table</button></div>
+          <!-- <div><button id="download-button" onclick="buttonDownload();">Guardar tabla</button></div> -->
+          <div><button id="showvalues" onclick="showvalues();">Mostrar valores en consola</button></div>
+          <div><button id="printTable">Guardar tabla</button></div>
     </main>
     <footer>
         <i class="material-icons">contact_support</i>
